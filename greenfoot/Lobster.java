@@ -19,7 +19,8 @@ public class Lobster extends Actor
        }
        if (super.isTouching(Crab.class)){
            //System.out.println("tocando algo");
-            super.removeTouching(Crab.class);
+           super.removeTouching(Crab.class);
+           Greenfoot.playSound("au.vab");
        }
         int aleatorio= Greenfoot.getRandomNumber(100);
         if(aleatorio<10){

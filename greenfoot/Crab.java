@@ -10,7 +10,8 @@ public class Crab extends Actor
     {
        if (super.isTouching(Worm.class)){
            //System.out.println("tocando algo");
-            super.removeTouching(Worm.class);
+           super.removeTouching(Worm.class);
+           Greenfoot.playSound("slurp.vab");
        }
        if(super.isAtEdge()){
            super.turn(15);
